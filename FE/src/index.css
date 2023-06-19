@@ -1,0 +1,487 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+body{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 160px;
+  padding-right: 160px;
+  background-color: white;
+  z-index: 999;
+  position:sticky;
+  top: 0;
+  left: 0;
+  
+}
+.header .navbar{
+  column-gap: 40px;
+  display: flex;
+  
+}
+.navbar li{
+  list-style-type: none;
+  position: relative;
+}
+a{
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+}
+.navbar li a:hover,
+.navbar li a .active{
+  color: #088178;
+}
+.active::after,
+.navbar li a:hover::after{
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 2px;
+  background: #088178;
+  left: 10px;
+  bottom: -4px;
+
+}
+/* ----------------------------------------------------- */
+.hamburger {
+  border: 0;
+  height: 40px;
+  width: 40px;
+  padding: 0.5rem;
+  border-radius: 50%;
+  background-color: bisque;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  position: absolute;
+  top: 50%;
+  right: 25px;
+  transform: translateY(-50%);
+  display: none;
+}
+.hamburger:hover {
+  background-color: #fdf256;
+}
+/* ------------------------------------------------------------ */
+
+
+
+
+/* ------------------ mid*/
+.mid{
+   background-image: url('/body-background.png'); 
+   width: 100%;
+   height: 90vh; 
+  
+  background-size: cover;
+  background-position: top 40% right 0;
+  background-color: bisque;
+  padding: 0 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.mid h4{
+  margin-bottom: 8px;
+  font-size: 25px;
+}
+ h2{
+  font-size: 45px;
+}
+.mid h1{
+  font-size: 50px;
+  color: #088178;
+}
+.mid p{
+  margin: 10px;
+  color: gray;
+}
+.mid a button{
+  border: 0;
+  padding: 14px 80px 14px 65px;
+  background-image: url('/public/button.png');
+  background-color: transparent;
+  color: #088178;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+}
+/* ------------------------ */
+#product1{
+  text-align: center;
+}
+#product1 .pro{
+  width: 23%;
+  min-width: 250px;
+  padding: 10px 12px;
+  border: 1px solid #cecece;
+  border-radius: 20px;
+  box-shadow: 20px 20px 30px rgb(0, 0,0, 0.02);
+  cursor: pointer;
+  margin: 15px ;
+  transition: 0.2s ease;
+}
+#product1 .pro:hover{
+  box-shadow: 20px 20px 30px rgb(0, 0,0, 0.06);
+
+}
+#product1 .pro img{
+  width: 100%;
+  border-radius: 20px;
+  
+}
+#product1 .pro .des{
+  text-align: start;
+  padding: 10px 0;
+}
+#product1 .pro .des span{
+  color: #606063;
+  font-size: 13px;
+}
+.product-container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 0px;
+  margin-left: 100px;
+}
+
+
+
+
+/* Footer.css ----------------------------------------------------------------------------------------------------------------*/
+
+footer {
+  background-color: #f2f2f2;
+  padding: 50px 0;
+  
+}
+
+.footer-container {
+  max-width: 1200px;
+  height: 100px;
+  margin: 0 auto;
+  display: flex;
+  
+  justify-content: space-between;
+  flex-wrap: wrap;
+  
+}
+
+.footer-section {
+  width: 20%;
+  margin-bottom: 30px;
+}
+
+.footer-section h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer-section p {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section li {
+  margin-bottom: 10px;
+}
+
+.footer-section a {
+  color: #666666;
+  text-decoration: none;
+}
+
+.social-icons {
+  display: flex;
+}
+
+.social-icons a {
+  margin-right: 10px;
+}
+
+.social-icons i {
+  font-size: 24px;
+  color: #666666;
+}
+
+.social-icons i:hover {
+  color: #000000;
+}
+
+
+/* -------------------------------- */
+
+
+
+.Login {
+  background-image: linear-gradient(135deg, #FAB2FF 10%, #1904E5 100%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  /* font-family: var(--mainFont);
+  color: var(--mainColor); */
+}
+
+.box-form {
+  margin: 0 auto;
+  width: 80%;
+  background: #FFFFFF;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex: 1 1 100%;
+  align-items: stretch;
+  justify-content: space-between;
+  box-shadow: 0 0 20px 6px #090b6f85;
+}
+
+@media (max-width: 980px) {
+  .box-form {
+    flex-flow: wrap;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+  }
+}
+
+.box-form div {
+  height: auto;
+}
+
+.box-form .left {
+  color: #FFFFFF;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("https://i.pinimg.com/736x/5d/73/ea/5d73eaabb25e3805de1f8cdea7df4a42--tumblr-backgrounds-iphone-phone-wallpapers-iphone-wallaper-tumblr.jpg");
+  overflow: hidden;
+}
+
+.box-form .left .overlay {
+  padding: 30px;
+  width: 100%;
+  height: 100%;
+  background: #5961f9ad;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.box-form .left .overlay h1 {
+  font-size: 10vmax;
+  line-height: 1;
+  font-weight: 900;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+
+
+.box-form .right {
+  padding: 40px;
+  overflow: hidden;
+}
+
+@media (max-width: 980px) {
+  .box-form .right {
+    width: 100%;
+  }
+}
+
+.box-form .right h5 {
+  font-size: 50px;
+  line-height: 0;
+}
+
+.box-form .right p {
+  font-size: 14px;
+  color: #B0B3B9;
+}
+
+.box-form .right .inputs {
+  transform: translateY(70px);
+  overflow: hidden;
+}
+
+.box-form .right input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 25px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #B0B3B9;
+}
+
+.box-form .right .remember-me--forget-password {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+  .right button {
+    float: right;
+    color: #fff;
+    font-size: 16px;
+    padding: 12px 35px;
+    border-radius: 50px;
+    display: inline-block;
+    border: 0; outline: 0;
+    box-shadow: 0px 4px 20px 0px #49c628a6;
+    background-image: linear-gradient( 135deg, #70F570 10%, #49C628 100%);
+  }
+/* shoppppppppppppppppppppppppppppppp */
+.shop-body{
+  min-height: 100vh;
+  font-family: monospace;
+  background-image: 
+      linear-gradient( 
+          to bottom right, #EFD7F4, #c5c7f1);
+  margin: 0;
+}
+.Shop{
+  background-color: #E9E0F7;
+  width: 1000px;
+  max-width:  100%;
+  /* margin: 50px auto 0; */
+  margin: auto  ;
+  border-radius: 10px;
+}
+.shop-mid{
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 32.666% 32.666% 32.666%;
+  column-gap: 1%;
+  row-gap: 10px;
+}
+.shop-mid .shop-item{
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.shop-mid .shop-item select,
+.shop-mid .shop-item input,
+.shop-mid .shop-item button{
+  width: 100%;
+  padding: 5px;
+  border: none;
+  background-color: transparent;
+  border-left: 1px solid #ddd;
+  outline: none;
+}
+.shop-mid .shop-item label{
+  display: block;
+  width: 40%;
+  padding: 0 10px;
+}
+.shop-mid .shop-item.submit button{
+  background-color: #AA82ED;
+  color: #fff;
+}
+.countResults{
+  font-size: xx-large;
+  text-align: center;
+  padding: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------------------------------------------------- */
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+  .navigation-menu .navbar  {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .navigation-menu .navbar {
+    
+    position: absolute;
+    top: 90px;
+    right: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100px;
+    height: calc(100vh - 77px);
+    background-color: rgb(250, 253, 240);
+    
+  }
+  .navigation-menu li {
+   
+    text-align: center;
+    margin-bottom:15px ;
+  }
+  .navigation-menu li a {
+    color: black;
+    
+    width: 100%;
+    padding: 1.5rem 0;
+  }
+  .navigation-menu li:hover {
+    background-color: #eee;
+  }
+}
+@media screen and (max-width: 768px) {
+  .navigation-menu.expanded ul {
+    display: block;
+  }
+
+  .navbar li{
+    list-style-type: none;
+    position: relative;
+  }
+  a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+  }
+  .navbar li a:hover,
+  .navbar li a .active{
+    color: #088178;
+  }
+  .active::after,
+  .navbar li a:hover::after{
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 2px;
+    background: #088178;
+    left: 25px;
+    bottom: -4px;
+  
+  }
+
+
+
+
+}
+

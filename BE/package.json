@@ -1,0 +1,29 @@
+{
+    "name": "be",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.mjs",
+        "dev": "nodemon index.mjs",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "format": "prettier --write \"**/*.mjs\""
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "cors": "^2.8.5",
+        "dotenv": "^8.2.0",
+        "express": "^4.18.2",
+        "express-session": "^1.17.3",
+        "mongoose": "^7.0.2",
+        "firebase-admin": "^11.8.0",
+        "multer": "^1.4.5-lts.1",
+        "uuid": "^9.0.0",
+        "@rowboat/mongoose-fuzzy-searching": "^2.0.3"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.22",
+        "prettier": "^2.4.1"
+    }
+}
